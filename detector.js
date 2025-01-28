@@ -1,5 +1,5 @@
 async function detectDevice() {
-    console.log("Détection en cours...");
+    console.log("🔍 Détection de l'appareil en cours...");
 
     // Détection de l'Adresse IP
     document.getElementById("ip-address").textContent = "Recherche...";
@@ -20,10 +20,8 @@ async function detectDevice() {
     const os = navigator.platform;
     const browser = navigator.userAgent;
 
-    document.getElementById("os-info").innerHTML = `<strong>🖥️ Système d'exploitation :</strong> ${os}`;
-    document.getElementById("browser-info").innerHTML = `<strong>🌍 Navigateur :</strong> ${browser}`;
-
-    console.log("Détection terminée.");
+    document.getElementById("os-info").textContent = os;
+    document.getElementById("browser-info").textContent = browser;
 }
 
 // Exécuter la détection dès que la page charge
