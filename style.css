@@ -71,3 +71,9 @@ button:hover {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
 }
+
+/* MODE SOMBRE */
+.dark-mode {
+    background: #000;
+    color: #0f0;
+}
