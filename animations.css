@@ -1,0 +1,51 @@
+📌 Étape 5 : Ajouter les animations (animations.css)
+
+Maintenant que animations.css est créé, nous allons ajouter des effets cinématiques modernes pour rendre la page plus fluide et interactive.
+
+1️⃣ Explication du fichier animations.css
+
+📌 Ce fichier CSS ajoute des animations fluides :
+	•	Effet d’apparition progressive (fade-in) pour un rendu cinématique.
+	•	Animations sur les boutons pour un effet dynamique.
+	•	Transition fluide sur les textes pour un look moderne.
+
+2️⃣ Copie ce code dans animations.css
+
+Ajoute ce code dans css/animations.css sur GitHub :
+
+/* ANIMATION : FADE-IN SUR LES SECTIONS */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.intro, #security-info {
+    animation: fadeIn 1s ease-out;
+}
+
+/* ANIMATION : APPARITION DES BOUTONS */
+button {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* TRANSITION SUR LES BOUTONS */
+button {
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* ANIMATION DU TEXTE PRINCIPAL */
+h1, h2, p {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+✅ Dis-moi quand tu as copié et ajouté ce code dans animations.css, puis on passe à l’ajout du fichier script.js pour la logique interactive ! 🚀
