@@ -23,3 +23,21 @@ function activateAnonymousMode() {
 setTimeout(() => {
     generateFakeIP();
 }, 5000);
+
+// Fonction pour analyser un site web
+function scanWebsite() {
+    let website = document.getElementById("website-url").value;
+    
+    if (website === "") {
+        alert("❌ Veuillez entrer une URL valide !");
+        return;
+    }
+
+    document.getElementById("scan-status").textContent = "🔄 Analyse en cours...";
+
+    // Simulation d'une analyse (remplacer par une API de sécurité plus tard)
+    setTimeout(() => {
+        let riskLevel = Math.random() > 0.5 ? "⚠️ Vulnérabilités détectées !" : "✅ Site sécurisé !";
+        document.getElementById("scan-status").textContent = riskLevel;
+    }, 3000);
+}
