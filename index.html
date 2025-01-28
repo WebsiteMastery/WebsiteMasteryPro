@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebsiteMasteryPro - Sécurité Web et Mobile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <script defer src="js/script.js"></script>
+    <script defer src="js/security.js"></script>
+    <script defer src="js/detector.js"></script>
+    <script defer src="js/darkmode.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🔐 WebsiteMasteryPro</h1>
+        <p>Analyse et sécurisation avancée des sites et appareils.</p>
+        <nav>
+            <a href="pages/phone.html">📱 Sécurité Téléphone</a>
+            <a href="pages/website.html">🌐 Sécurité Site Web</a>
+        </nav>
+    </header>
 
+    <main>
+        <section class="intro">
+            <h2>Bienvenue sur WebsiteMasteryPro</h2>
+            <button onclick="activateSecureMode()">🔒 Activer le Mode Sécurisé</button>
+            <button onclick="detectDevice()">🕵️ Analyser votre Appareil</button>
+        </section>
+
+        <section id="security-info">
+            <h2>Informations Système</h2>
+            <p><strong>Adresse IP :</strong> <span id="ip-address">Détection en cours...</span></p>
+            <p><strong>Type de Réseau :</strong> <span id="network-type">Détection en cours...</span></p>
+        </section>
+    </main>
+</body>
+</html>
