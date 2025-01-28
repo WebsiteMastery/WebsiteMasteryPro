@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌐 Sécurité Site Web - WebsiteMasteryPro</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/security.js"></script>
+</head>
+<body>
+    <header>
+        <h1>🌐 Sécurité Site Web</h1>
+        <p>Analysez et protégez votre site contre les menaces.</p>
+        <nav>
+            <a href="../index.html">🏠 Accueil</a>
+            <a href="phone.html">📱 Sécurité Téléphone</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>🔍 Scanner un Site Web</h2>
+            <input type="text" id="website-url" placeholder="Entrez l'URL du site">
+            <button onclick="scanWebsite()">🔎 Lancer l'analyse</button>
+        </section>
+
+        <section id="scan-results">
+            <h2>🛡️ Résultats de l'analyse</h2>
+            <p id="scan-status">En attente...</p>
+        </section>
+    </main>
+</body>
+</html>
