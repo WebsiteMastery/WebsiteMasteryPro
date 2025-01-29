@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("✅ script.js chargé avec succès !");
-    alert("✅ Le script fonctionne !");
 });
 
 // Fonction pour activer le Mode Sécurisé
